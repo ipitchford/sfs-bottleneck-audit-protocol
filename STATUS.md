@@ -11,3 +11,5 @@
 - Real data: NOT read by any code in this repository.
 - External: not independently reproduced; not specialist-reviewed.
 - Release B: may begin now that the freeze is externally timestamped.
+
+- A2 freeze (v0.2.0-candidate): https://doi.org/10.5281/zenodo.21893667
