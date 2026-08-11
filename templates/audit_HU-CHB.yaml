@@ -1,0 +1,16 @@
+audit_version: "0.1"
+protocol: "sfs-bottleneck-audit-protocol v0.1.0 (frozen)"
+dataset_id: "HU-CHB"
+sample_size_haplotypes: 206
+claim:
+  exact_wording: "A severe bottleneck (about 1280 breeding individuals, ratio about 0.05-0.1 of surrounding epochs) occurred 930-813 kya."
+  feature_type: "functional (depression ratio F1)"
+results:
+  bounded_cells: null
+  class_rejected_cells: null
+  f1_certified_intervals_file: ""
+  severity_excluded_cells: null
+conclusion:
+  label: ""
+  strongest_warranted_claim: ""
+  falsifier: ""

@@ -1,0 +1,27 @@
+name: ci
+on:
+  push:
+    branches: [main]
+    tags: ["v*"]
+  pull_request:
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ["3.13", "3.14"]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - run: pip install -r requirements.lock
+      - run: shasum -a 256 -c SHA256SUMS
+      - name: tests
+        run: PYTHONPATH=src python -m pytest tests/ -q
+      - name: synthetic validation (frozen gate)
+        run: PYTHONPATH=src python examples/run_synthetic_validation.py
+      - name: manifest unchanged after replay
+        run: |
+          find . -name "__pycache__" -type d -exec rm -rf {} + 2>/dev/null || true
+          shasum -a 256 -c SHA256SUMS

@@ -1,0 +1,238 @@
+{
+  "date": "2026-08-11",
+  "declared": {
+    "grid_edges": [
+      0.0,
+      2.0,
+      61
+    ],
+    "reference_window": [
+      0.0,
+      0.1
+    ],
+    "sample_size": 216,
+    "severity_threshold": 0.1,
+    "synthetic_sites": 2000000,
+    "validation_budgets": [
+      0.5,
+      5.0
+    ],
+    "z_score": 3.0
+  },
+  "failures": [],
+  "package": "sfs-bottleneck-audit-protocol",
+  "records": [
+    {
+      "certified_lower": 0.5759961693195125,
+      "certified_upper": 1.2750045569919877,
+      "dual_gap_lower": 2.254862963013693e-13,
+      "dual_gap_upper": 8.060219158778636e-13,
+      "generator_in_class": true,
+      "history": "constant",
+      "outcome": "bounded",
+      "severity_excluded": true,
+      "solver_agreement": 4.440892098500626e-16,
+      "true_ratio": 1.0,
+      "tv_budget": 0.5,
+      "window": [
+        0.5606896551724138,
+        0.6413793103448275
+      ],
+      "witness_covered": true
+    },
+    {
+      "certified_lower": 0.0909090909090477,
+      "certified_upper": 1.3949632742374805,
+      "dual_gap_lower": 4.321543123353422e-14,
+      "dual_gap_upper": 5.95523630408934e-13,
+      "generator_in_class": true,
+      "history": "constant",
+      "outcome": "bounded",
+      "severity_excluded": false,
+      "solver_agreement": 2.220446049250313e-16,
+      "true_ratio": 1.0,
+      "tv_budget": 0.5,
+      "window": [
+        1.355,
+        1.55
+      ],
+      "witness_covered": true
+    },
+    {
+      "certified_lower": 0.022980165367665867,
+      "certified_upper": 5.934186522161675,
+      "dual_gap_lower": 8.451572774959004e-15,
+      "dual_gap_upper": 1.438849039914203e-13,
+      "generator_in_class": true,
+      "history": "constant",
+      "outcome": "bounded",
+      "severity_excluded": false,
+      "solver_agreement": 4.440892098500626e-15,
+      "true_ratio": 1.0,
+      "tv_budget": 5.0,
+      "window": [
+        0.5606896551724138,
+        0.6413793103448275
+      ],
+      "witness_covered": true
+    },
+    {
+      "certified_lower": 0.029737106621016873,
+      "certified_upper": 3.5282933264482956,
+      "dual_gap_lower": 3.507957813120299e-14,
+      "dual_gap_upper": 8.837375276016246e-14,
+      "generator_in_class": true,
+      "history": "constant",
+      "outcome": "bounded",
+      "severity_excluded": false,
+      "solver_agreement": 1.3322676295501878e-15,
+      "true_ratio": 1.0,
+      "tv_budget": 5.0,
+      "window": [
+        1.355,
+        1.55
+      ],
+      "witness_covered": true
+    },
+    {
+      "certified_lower": 0.35825770123514217,
+      "certified_upper": 1.22155283341157,
+      "dual_gap_lower": 1.7946755193065655e-13,
+      "dual_gap_upper": 3.0242475190789264e-13,
+      "generator_in_class": false,
+      "history": "bottleneck",
+      "note": "class_sensitivity_demonstration",
+      "outcome": "bounded",
+      "severity_excluded": true,
+      "solver_agreement": 1.1102230246251565e-16,
+      "true_ratio": 0.08000000000000002,
+      "tv_budget": 0.5,
+      "window": [
+        0.5606896551724138,
+        0.6413793103448275
+      ],
+      "witness_covered": false
+    },
+    {
+      "certified_lower": 0.09090909090908679,
+      "certified_upper": 1.2407188412422743,
+      "dual_gap_lower": 4.093947403305265e-15,
+      "dual_gap_upper": 2.970956813896919e-13,
+      "generator_in_class": false,
+      "history": "bottleneck",
+      "outcome": "bounded",
+      "severity_excluded": false,
+      "solver_agreement": 2.7755575615628914e-17,
+      "true_ratio": 1.0,
+      "tv_budget": 0.5,
+      "window": [
+        1.355,
+        1.55
+      ],
+      "witness_covered": true
+    },
+    {
+      "certified_lower": 0.021940119850516204,
+      "certified_upper": 5.47807173012824,
+      "dual_gap_lower": 5.859895901849654e-15,
+      "dual_gap_upper": 1.9273471707492718e-13,
+      "generator_in_class": true,
+      "history": "bottleneck",
+      "outcome": "bounded",
+      "severity_excluded": false,
+      "solver_agreement": 1.3322676295501878e-14,
+      "true_ratio": 0.08000000000000002,
+      "tv_budget": 5.0,
+      "window": [
+        0.5606896551724138,
+        0.6413793103448275
+      ],
+      "witness_covered": true
+    },
+    {
+      "certified_lower": 0.02995711391199257,
+      "certified_upper": 3.559677574258397,
+      "dual_gap_lower": 7.400330348517059e-15,
+      "dual_gap_upper": 4.432898492723325e-12,
+      "generator_in_class": true,
+      "history": "bottleneck",
+      "outcome": "bounded",
+      "severity_excluded": false,
+      "solver_agreement": 1.5987211554602254e-14,
+      "true_ratio": 1.0,
+      "tv_budget": 5.0,
+      "window": [
+        1.355,
+        1.55
+      ],
+      "witness_covered": true
+    },
+    {
+      "generator_tv": 2.0,
+      "history": "expansion",
+      "outcome": "class_rejected",
+      "rejection_consistent": true,
+      "true_ratio": 0.3333333333333333,
+      "tv_budget": 0.5,
+      "window": [
+        0.5606896551724138,
+        0.6413793103448275
+      ]
+    },
+    {
+      "generator_tv": 2.0,
+      "history": "expansion",
+      "outcome": "class_rejected",
+      "rejection_consistent": true,
+      "true_ratio": 0.3333333333333333,
+      "tv_budget": 0.5,
+      "window": [
+        1.355,
+        1.55
+      ]
+    },
+    {
+      "certified_lower": 0.013011500638397719,
+      "certified_upper": 1.7024113874216265,
+      "dual_gap_lower": 2.240048424528851e-14,
+      "dual_gap_upper": 1.8185453143360064e-13,
+      "generator_in_class": true,
+      "history": "expansion",
+      "outcome": "bounded",
+      "severity_excluded": false,
+      "solver_agreement": 2.220446049250313e-16,
+      "true_ratio": 0.3333333333333333,
+      "tv_budget": 5.0,
+      "window": [
+        0.5606896551724138,
+        0.6413793103448275
+      ],
+      "witness_covered": true
+    },
+    {
+      "certified_lower": 0.013206356570184109,
+      "certified_upper": 1.049168327547506,
+      "dual_gap_lower": 2.074902749615859e-14,
+      "dual_gap_upper": 2.2315482794965646e-13,
+      "generator_in_class": true,
+      "history": "expansion",
+      "outcome": "bounded",
+      "severity_excluded": false,
+      "solver_agreement": 2.220446049250313e-16,
+      "true_ratio": 0.3333333333333333,
+      "tv_budget": 5.0,
+      "window": [
+        1.355,
+        1.55
+      ],
+      "witness_covered": true
+    }
+  ],
+  "software": {
+    "numpy": "2.4.4",
+    "python": "3.14.6"
+  },
+  "status": "PASS",
+  "synthetic_only": true,
+  "version": "0.1.0"
+}
