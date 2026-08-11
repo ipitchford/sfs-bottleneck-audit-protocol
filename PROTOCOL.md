@@ -1,6 +1,6 @@
 # Frozen protocol: SFS identifiability audit of the 930 kya bottleneck claim
 
-**Package:** sfs-bottleneck-audit-protocol v0.1.0, 11 August 2026.
+**Package:** sfs-bottleneck-audit-protocol v0.1.1, 11 August 2026.
 **Status:** anonymous, unrefereed, producer-validated preregistration. This
 document freezes every analysis choice for the executed audit (Release B).
 Release B runs this pipeline byte-for-byte on the declared data; any departure

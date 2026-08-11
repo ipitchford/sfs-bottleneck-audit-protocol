@@ -1,5 +1,5 @@
 audit_version: "0.1"
-protocol: "sfs-bottleneck-audit-protocol v0.1.0 (frozen)"
+protocol: "sfs-bottleneck-audit-protocol v0.1.1 (frozen)"
 dataset_id: "HU-CHB"
 sample_size_haplotypes: 206
 claim:

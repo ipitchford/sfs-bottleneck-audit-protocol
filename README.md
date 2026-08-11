@@ -1,4 +1,4 @@
-# SFS bottleneck audit — frozen protocol (Release A) v0.1.0
+# SFS bottleneck audit — frozen protocol (Release A) v0.1.1
 
 **Status: anonymous, unrefereed, producer-validated preregistration.**
 Developed and validated on synthetic data only; no real spectrum has been

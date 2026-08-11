@@ -209,7 +209,7 @@ def main() -> None:
 
     receipt = {
         "package": "sfs-bottleneck-audit-protocol",
-        "version": "0.1.0",
+        "version": "0.1.1",
         "date": "2026-08-11",
         "synthetic_only": True,
         "declared": {
