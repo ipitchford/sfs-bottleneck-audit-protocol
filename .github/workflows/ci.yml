@@ -16,12 +16,17 @@ jobs:
         with:
           python-version: ${{ matrix.python-version }}
       - run: pip install -r requirements.lock
-      - run: shasum -a 256 -c SHA256SUMS
+      - name: manifest verifies on checkout
+        run: shasum -a 256 -c SHA256SUMS
       - name: tests
         run: PYTHONPATH=src python -m pytest tests/ -q
-      - name: synthetic validation (frozen gate)
+      - name: synthetic validation must PASS
         run: PYTHONPATH=src python examples/run_synthetic_validation.py
-      - name: manifest unchanged after replay
+      - name: frozen files unchanged after replay
+        # The regenerated receipt embeds full-precision floats whose last
+        # units differ across BLAS implementations; its logical PASS is
+        # asserted by the previous step. Every other frozen file must be
+        # byte-identical after replay.
         run: |
           find . -name "__pycache__" -type d -exec rm -rf {} + 2>/dev/null || true
-          shasum -a 256 -c SHA256SUMS
+          grep -v "results/synthetic_validation_receipt.json" SHA256SUMS | shasum -a 256 -c -
